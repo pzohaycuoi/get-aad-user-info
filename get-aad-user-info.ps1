@@ -20,6 +20,7 @@ $dataFile = New-Item -Path $env:USERPROFILE -Name "AAD-User-info-$(get-date -For
 # Create empty arrays
 $arrCountOthMails = @()
 $arrCountProxAdd = @()
+
 # Loop through each user and append count into the arrays
 foreach ($user in $filteredAadUser) {
   $countUserOthMails = $user.OtherMails.Count
